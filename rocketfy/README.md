@@ -7,7 +7,7 @@ Este é o clone do [Pipefy](https://www.pipefy.com/pt-br/) que foi criado a part
 Esse projeto possui a propriedade de Drag'n Drop, que é o fato de podermos arrastar coisas, no caso desse projeto, podemos arrastar os cards de uma fila para outra.
 O layout não está 100% fiel ao layout do Pipefy, porém acrescentei o máximo de itens personalizáveis.
 
-![Imagem final do projeto](src/assets/imagem-final-projeto.png)
+![Imagem final do projeto](https://raw.githubusercontent.com/ildasilva/challenges/master/rocketfy/src/assets/imagem-final-projeto.png)
 
 ## Utilizando o projeto
 
