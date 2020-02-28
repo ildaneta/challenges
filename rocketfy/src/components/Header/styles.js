@@ -13,7 +13,7 @@ export const Container = styled.div`
 export const HeaderWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  margin-left: 20px;
+  margin-left: 35px;
   justify-content: space-around;
   width: 100%;
 `;
@@ -22,13 +22,13 @@ export const HeaderWrapperInfos = styled.div`
   display: flex;
   align-items: center;
 
-  .teste {
+  .menuInfo {
     width: 211px;
     margin-top: 10px;
     cursor: pointer;
   }
 
-  .teste2 {
+  .report {
     margin-top: 13px;
     padding-bottom: 10px;
     cursor: pointer;
@@ -114,7 +114,7 @@ export const WrapperInfoUser = styled.div`
     }
   }
 
-  .teste3 {
+  .avatar {
     display: flex;
     align-items: center;
     height: 28px;

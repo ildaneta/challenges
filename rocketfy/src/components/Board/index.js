@@ -31,11 +31,9 @@ export default function Board() {
         ))}
       </Container>
       <WrapperButton>
-        <div>
-          <Button type="button">
-            <MdAdd size={24} color="#fff" title="Criar nova" />
-          </Button>
-        </div>
+        <Button type="button" title="Criar nova">
+          <MdAdd size={24} color="#fff" title="Criar nova" />
+        </Button>
       </WrapperButton>
     </BoardContext.Provider>
   );

@@ -34,7 +34,7 @@ export default function Header() {
               className="notification"
             />
 
-            <div className="teste3">
+            <div className="avatar">
               <img src={Avatar} alt="avatar do usuário" />
               <div className="ellipses">
                 <Ellipses size={12} />
@@ -43,7 +43,7 @@ export default function Header() {
           </WrapperInfoUser>
         </WrapperInfo>
         <HeaderWrapperInfos>
-          <div className="teste">
+          <div className="menuInfo">
             <p title="Visualizar em Kanban" className="active">
               <BarChart2 size={21} className="rotate" />
               Visualizar em Kanban
@@ -52,7 +52,7 @@ export default function Header() {
 
             <div className="bottom" />
           </div>
-          <div className="teste2">
+          <div className="report">
             <p title="Relatórios" className="notActive">
               <TableChart size={21} className="notActive" />
               Relatórios

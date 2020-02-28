@@ -31,7 +31,6 @@ export const Container = styled.div`
   }
 
   .date {
-    /* margin-top: px; */
     margin-bottom: 5px;
     font-size: 13.4px;
     color: #748396;

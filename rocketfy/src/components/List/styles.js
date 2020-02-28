@@ -1,14 +1,24 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const Container = styled.div`
+  ${props =>
+    props.done &&
+    css`
+      opacity: 0.6;
+
+      button{
+        opacity: 0;
+      }
+      }
+    `}
+
   padding: 0 15px;
   height: 100%;
-  opacity: ${props => (props.done ? 0.6 : 1)};
   flex: 0 0 320px;
 
   & + div {
     border-left: 1px solid rgba(0, 0, 0, 0.06);
-    height: calc(100vh + 340px);
+    height: calc(100vh + 320px);
   }
 
   header {
