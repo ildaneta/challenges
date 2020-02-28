@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import produce from 'immer';
+import { MdAdd } from 'react-icons/md';
 import { loadLists } from '../../services/api';
-
 import BoardContext from './context';
 
 import List from '../List';
-import { Container } from './styles';
+import { Container, Button, WrapperButton } from './styles';
 
 const data = loadLists();
 
@@ -30,6 +30,13 @@ export default function Board() {
           <List key={list.title} data={list} index={index} />
         ))}
       </Container>
+      <WrapperButton>
+        <div>
+          <Button type="button">
+            <MdAdd size={24} color="#fff" title="Criar nova" />
+          </Button>
+        </div>
+      </WrapperButton>
     </BoardContext.Provider>
   );
 }

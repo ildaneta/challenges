@@ -66,14 +66,26 @@ export default function Card({ data, index, listIndex }) {
   dragRef(dropRef(ref));
 
   return (
-    <Container ref={ref} isDragging={isDragging}>
-      <header>
-        {data.labels.map(label => (
-          <Label color={label} key={label} />
-        ))}
-      </header>
-      <p>{data.content}</p>
-      {data.user && <img src={data.user} alt="Avatar do usuário logado" />}
-    </Container>
+    <>
+      <Container ref={ref} isDragging={isDragging}>
+        <header>
+          {data.labels.map(label => (
+            <Label color={label} key={label} />
+          ))}
+        </header>
+
+        <p className="content">{data.content}</p>
+        <p className="priority">{data.priority}</p>
+        <p className="date">{data.date}</p>
+        {data.dateCard && <p className="dateCard">{data.dateCard}</p>}
+
+        {data.user && (
+          <img
+            src={data.user}
+            alt="Avatar do usuário que está com a atividade"
+          />
+        )}
+      </Container>
+    </>
   );
 }

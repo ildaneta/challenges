@@ -16,9 +16,40 @@ export const Container = styled.div`
     left: 15px;
   }
 
-  p {
-    font-weight: 500;
+  .content {
+    font-weight: bold;
     line-height: 20px;
+    font-size: 14px;
+    color: #192c3d;
+  }
+
+  .priority {
+    margin-top: 5px;
+    font-size: 13.4px;
+    color: #748396;
+    font-weight: 500;
+  }
+
+  .date {
+    /* margin-top: px; */
+    margin-bottom: 5px;
+    font-size: 13.4px;
+    color: #748396;
+    font-weight: 500;
+  }
+
+  .dateCard {
+    margin-bottom: 8px;
+    color: #fff;
+    background: #ffa61e;
+    width: 55px;
+    height: 25px;
+    border-radius: 3px;
+    font-size: 13.4px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   img {

@@ -8,7 +8,7 @@ export const Container = styled.div`
 
   & + div {
     border-left: 1px solid rgba(0, 0, 0, 0.06);
-    height: 100vh;
+    height: calc(100vh + 340px);
   }
 
   header {
@@ -40,5 +40,16 @@ export const Container = styled.div`
 
   ul {
     margin-top: 30px;
+  }
+
+  .phrase {
+    text-align: center;
+    padding: 20px;
+    color: #7f8b97;
+    margin-bottom: 20px;
+    font-size: 13px;
+    display: flex;
+    font-weight: bold;
+    line-height: 17px;
   }
 `;
