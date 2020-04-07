@@ -1,3 +1,4 @@
+import { Animated } from 'react-native';
 import styled from 'styled-components/native';
 import { getStatusBarHeight } from 'react-native-iphone-x-helper';
 
@@ -7,7 +8,6 @@ export const Container = styled.ScrollView.attrs({
   flex: 1;
   background: #8b10ae;
   padding-top: ${getStatusBarHeight()}px;
-  /* justify-content: center; */
   padding-right: 20px;
   padding-left: 20px;
 `;
@@ -19,7 +19,7 @@ export const Content = styled.View`
   z-index: 5;
 `;
 
-export const Card = styled.View`
+export const Card = styled(Animated.View)`
   flex: 1;
   background: #fff;
   border-radius: 4px;
