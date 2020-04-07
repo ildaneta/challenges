@@ -1,9 +1,7 @@
 import React from 'react';
 import QRCode from 'react-native-qrcode-generator';
-import { View, Text } from 'react-native';
 
 import Icon from 'react-native-vector-icons/MaterialIcons';
-import IconIonic from 'react-native-vector-icons/Ionicons';
 
 import {
   Container,
@@ -15,9 +13,16 @@ import {
   SignOutButtonText,
 } from './styles';
 
-export default function Menu() {
+export default function Menu({ translateY }) {
   return (
-    <Container>
+    <Container
+      style={{
+        opacity: translateY.interpolate({
+          inputRange: [0, 180],
+          outputRange: [0, 1],
+        }),
+      }}
+    >
       <Code>
         <QRCode
           value="http://ildaneta.netlify.com/"
