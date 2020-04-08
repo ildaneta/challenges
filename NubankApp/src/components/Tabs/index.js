@@ -3,7 +3,21 @@ import { View } from 'react-native';
 
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
-import { Container, TabsContainer, TabItem, TabText } from './styles';
+import {
+  Container,
+  TabsContainer,
+  TabItem,
+  TabText,
+  Logos,
+  Help,
+  Barcode,
+} from './styles';
+
+import smartphone from '../../assets/smartphone.png';
+import emprestimo from '../../assets/emprestimo.png';
+import help from '../../assets/help.png';
+import barcode from '../../assets/barcode.png';
+import padlock from '../../assets/padlock.png';
 
 export default function Tabs({ translateY }) {
   return (
@@ -12,14 +26,14 @@ export default function Tabs({ translateY }) {
         transform: [
           {
             translateY: translateY.interpolate({
-              inputRange: [0, 500],
-              outputRange: [0, 50],
+              inputRange: [0, 540],
+              outputRange: [0, 100],
               extrapolate: 'clamp',
             }),
           },
         ],
         opacity: translateY.interpolate({
-          inputRange: [0, 500],
+          inputRange: [0, 540],
           outputRange: [1, 0.3],
           extrapolate: 'clamp',
         }),
@@ -27,27 +41,27 @@ export default function Tabs({ translateY }) {
     >
       <TabsContainer>
         <TabItem>
-          <Icon name="person-add" size={24} color="#fff" />
-          <TabText>Indicar amigos</TabText>
+          <Logos source={smartphone} />
+          <TabText>Recarga de celular</TabText>
         </TabItem>
 
         <TabItem>
-          <Icon name="chat-bubble-outline" size={24} color="#fff" />
-          <TabText>Cobrar</TabText>
+          <Logos source={emprestimo} />
+          <TabText>Empréstimos</TabText>
         </TabItem>
 
         <TabItem>
-          <Icon name="arrow-downward" size={24} color="#fff" />
-          <TabText>Depositar</TabText>
+          <Help source={help} />
+          <TabText>Me ajuda</TabText>
         </TabItem>
 
         <TabItem>
-          <Icon name="arrow-upward" size={24} color="#fff" />
-          <TabText>Transferir</TabText>
+          <Barcode source={barcode} />
+          <TabText>Pagar</TabText>
         </TabItem>
 
         <TabItem>
-          <Icon name="lock" size={24} color="#fff" />
+          <Logos source={padlock} />
           <TabText>Bloquear cartão</TabText>
         </TabItem>
       </TabsContainer>
