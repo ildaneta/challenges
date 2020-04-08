@@ -12,6 +12,7 @@ export default function Header() {
         <Logo source={logo} />
         <Title>Ilda</Title>
       </Top>
+
       <Icon name="keyboard-arrow-down" size={20} color="#fff" />
     </Container>
   );
