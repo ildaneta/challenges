@@ -27,3 +27,20 @@ export const TabText = styled.Text`
   font-size: 13px;
   color: #fff;
 `;
+
+export const Logos = styled.Image`
+  width: 27px;
+  height: 28px;
+`;
+
+export const Help = styled.Image`
+  margin-top: 3px;
+  width: 20px;
+  height: 21px;
+`;
+
+export const Barcode = styled.Image`
+  width: 33px;
+  height: 28px;
+  margin-top: 3px;
+`;
