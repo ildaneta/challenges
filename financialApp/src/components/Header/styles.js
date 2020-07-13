@@ -20,6 +20,7 @@ export const Sold = styled.Text`
   font-size: 30px;
   letter-spacing: -1px;
   font-weight: bold;
+  font-family: 'NunitoSans-light';
   color: #fff;
 `;
 
@@ -28,12 +29,14 @@ export const AvailableBalance = styled.Text`
   letter-spacing: 0.5px;
   color: #e6e2e6;
   margin-left: 20px;
+
   margin-bottom: 25px;
 `;
 
 export const ContainerPhotoNotification = styled.View`
   flex-direction: row;
   align-items: center;
+  margin-right: 12px;
 `;
 
 export const Photo = styled.Image`
@@ -52,16 +55,19 @@ export const WrapperMenusIcons = styled.View`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  width: 110px;
 `;
 
 export const ContainerMenusIcons = styled.View`
   margin: 5px 20px;
 `;
 
-export const MenusIcons = styled.View`
-  background-color: #fff;
+export const MenusIcons = styled.TouchableOpacity.attrs({
+  activeOpacity: 0.8,
+})`
+  background-color: ${(props) => (props.gray ? '#F5F7F9' : '#fff')};
   padding: 5px;
-  border-radius: 12px;
+  border-radius: 16px;
 `;
 
 export const Icons = styled.Image`
@@ -77,5 +83,5 @@ export const ContainerLabelIcon = styled.View`
 export const LabelIcon = styled.Text`
   font-size: 15px;
   color: #e6e2e6;
-  font-weight: bold;
+  font-family: sans-serif;
 `;

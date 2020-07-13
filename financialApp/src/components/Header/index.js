@@ -1,11 +1,12 @@
 import React from 'react';
-import {Text, StatusBar} from 'react-native';
+import {StatusBar} from 'react-native';
 
 import notification from '../../assets/images/notification.png';
 import ilda from '../../assets/images/ilda.jpeg';
 import loan from '../../assets/images/loan.png';
 import walletRequest from '../../assets/images/wallet-request.png';
 import walletSend from '../../assets/images/wallet-send.png';
+import walletAdd from '../../assets/images/wallet-add.png';
 
 import {
   Container,
@@ -74,7 +75,7 @@ function Header() {
 
           <ContainerMenusIcons>
             <MenusIcons>
-              <Icons source={walletRequest} />
+              <Icons source={walletAdd} />
             </MenusIcons>
             <ContainerLabelIcon>
               <LabelIcon>Add +</LabelIcon>
