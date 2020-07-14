@@ -20,7 +20,6 @@ export const Sold = styled.Text`
   font-size: 30px;
   letter-spacing: -1px;
   font-weight: bold;
-  font-family: 'NunitoSans-light';
   color: #fff;
 `;
 
@@ -83,5 +82,5 @@ export const ContainerLabelIcon = styled.View`
 export const LabelIcon = styled.Text`
   font-size: 15px;
   color: #e6e2e6;
-  font-family: sans-serif;
+  font-family: 'NunitoSans-Bold';
 `;
