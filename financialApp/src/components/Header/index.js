@@ -6,7 +6,7 @@ import ilda from '../../assets/images/ilda.jpeg';
 import loan from '../../assets/images/loan.png';
 import walletRequest from '../../assets/images/wallet-request.png';
 import walletSend from '../../assets/images/wallet-send.png';
-import walletAdd from '../../assets/images/wallet-add.png';
+import mobileTopUp from '../../assets/images/wallet-add.png';
 
 import {
   Container,
@@ -75,10 +75,10 @@ function Header() {
 
           <ContainerMenusIcons>
             <MenusIcons>
-              <Icons source={walletAdd} />
+              <Icons source={mobileTopUp} />
             </MenusIcons>
             <ContainerLabelIcon>
-              <LabelIcon>Add +</LabelIcon>
+              <LabelIcon>Recarga</LabelIcon>
             </ContainerLabelIcon>
           </ContainerMenusIcons>
         </WrapperMenusIcons>
