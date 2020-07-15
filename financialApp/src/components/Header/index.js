@@ -42,6 +42,7 @@ function Header() {
               <Photo source={ilda} />
             </ContainerPhotoNotification>
           </ContainerProfile>
+
           <AvailableBalance>Saldo Disponível</AvailableBalance>
         </ContainerProfileHome>
 

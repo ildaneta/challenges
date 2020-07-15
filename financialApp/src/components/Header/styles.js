@@ -1,8 +1,12 @@
 import styled from 'styled-components/native';
+import {
+  widthPercentageToDP as wp,
+  heightPercentageToDP as hp,
+} from 'react-native-responsive-screen';
 
 export const Container = styled.SafeAreaView`
   background-color: #2750a0;
-  height: 250px;
+  height: ${hp('34%')};
 `;
 
 export const ContainerProfileHome = styled.View``;
@@ -11,76 +15,85 @@ export const ContainerProfile = styled.View`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 25px 20px 0px;
+  margin-top: ${wp('4%')};
+  margin-right: ${wp('5%')};
+  margin-left: ${wp('5%')};
 `;
 
 export const ContainerSold = styled.View``;
 
 export const Sold = styled.Text`
-  font-size: 30px;
-  letter-spacing: -1px;
+  font-size: ${wp('7%')};
+  letter-spacing: ${wp('-0.2%')};
   font-weight: bold;
   color: #fff;
 `;
 
 export const AvailableBalance = styled.Text`
-  font-size: 15px;
-  letter-spacing: 0.5px;
+  font-size: ${wp('4%')};
+  letter-spacing: ${wp('0.02%')};
   color: #e6e2e6;
-  margin-left: 20px;
-
-  margin-bottom: 25px;
+  margin-left: ${wp('5%')};
+  margin-bottom: ${wp('5%')};
+  padding-top: ${wp('1')};
 `;
 
 export const ContainerPhotoNotification = styled.View`
   flex-direction: row;
   align-items: center;
-  margin-right: 12px;
 `;
 
 export const Photo = styled.Image`
-  height: 45px;
-  width: 50px;
-  border-radius: 7px;
+  height: ${hp('7')};
+  width: ${wp('12')};
+  border-radius: ${wp('3')};
 `;
 
 export const Notification = styled.Image`
-  height: 23px;
-  width: 29px;
-  margin-right: 10px;
+  height: ${hp('4%')};
+  width: ${wp('6')};
+  margin-right: ${wp('3')};
 `;
 
 export const WrapperMenusIcons = styled.View`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 110px;
 `;
 
 export const ContainerMenusIcons = styled.View`
-  margin: 5px 20px;
+  margin-top: ${wp('1')};
+  margin-bottom: ${wp('1')};
+  margin-left: ${wp('5')};
+  margin-right: ${wp('5')};
 `;
 
 export const MenusIcons = styled.TouchableOpacity.attrs({
-  activeOpacity: 0.8,
+  activeOpacity: 0.6,
 })`
   background-color: ${(props) => (props.gray ? '#F5F7F9' : '#fff')};
-  padding: 5px;
-  border-radius: 16px;
+  padding-top: ${wp('1.2')};
+  padding-bottom: ${wp('1.2')};
+  padding-left: ${wp('1.2')};
+  padding-right: ${wp('1.2')};
+  border-top-left-radius: ${wp('4')};
+  border-top-right-radius: ${wp('4')};
+  border-bottom-left-radius: ${wp('4')};
+  border-bottom-right-radius: ${wp('4')};
 `;
 
 export const Icons = styled.Image`
-  height: 45px;
-  width: 45px;
+  width: ${wp('11%')};
+  height: ${hp('6.2%')};
 `;
 
 export const ContainerLabelIcon = styled.View`
   align-items: center;
-  margin-top: 5px;
+  margin-top: ${wp('1.3')};
 `;
 
 export const LabelIcon = styled.Text`
-  font-size: 15px;
+  font-size: ${wp('3.4')};
   color: #e6e2e6;
   font-family: 'NunitoSans-Bold';
 `;
