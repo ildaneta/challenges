@@ -1,12 +1,11 @@
 import React from 'react';
 import {TouchableOpacity, View, StyleSheet} from 'react-native';
 
-// import styles from './';
-
 import income from '../../assets/images/income.png';
 import expense from '../../assets/images/expanse.png';
 import grocery from '../../assets/images/grocery.png';
 import car from '../../assets/images/car.png';
+import creditCardPayment from '../../assets/images/credit-card-payment.png';
 
 import {
   Container,
@@ -23,9 +22,11 @@ import {
   ContainerSubTitleOutgoing,
   TitleOutgoing,
   SubTitleOutgoing,
+  ReceivedStrong,
   WrapperOutgoing,
   ContainerImage,
   Image,
+  UnicOutgoing,
 } from './styles';
 
 function Main() {
@@ -34,22 +35,22 @@ function Main() {
       <ContainerTransactionsText>
         <TransactionsText extraBold>Transações Recentes</TransactionsText>
         <TouchableOpacity>
-          <TransactionsText>Veja todas</TransactionsText>
+          <TransactionsText>Veja tudo</TransactionsText>
         </TouchableOpacity>
       </ContainerTransactionsText>
 
       <View>
         <ButtonsContainer>
-          <WrapperButton first noImage style={style.shadow}>
+          <WrapperButton first noImage style={styles.shadow}>
             <Buttons>Todos</Buttons>
           </WrapperButton>
 
-          <WrapperButton style={style.shadow}>
+          <WrapperButton style={styles.shadow}>
             <ButtonsIcons source={income} />
             <Buttons>Entradas</Buttons>
           </WrapperButton>
 
-          <WrapperButton style={style.shadow}>
+          <WrapperButton style={styles.shadow}>
             <ButtonsIcons source={expense} />
             <Buttons>Saídas</Buttons>
           </WrapperButton>
@@ -57,7 +58,7 @@ function Main() {
       </View>
 
       <SafeAreaContainer>
-        <TitleDays>TODAY</TitleDays>
+        <TitleDays>HOJE</TitleDays>
 
         <WrapperOutgoing first>
           <ContainerImage>
@@ -95,13 +96,37 @@ function Main() {
           </ContainerOutgoing>
         </WrapperOutgoing>
       </SafeAreaContainer>
+
+      <SafeAreaContainer>
+        <TitleDays>ONTEM</TitleDays>
+
+        <UnicOutgoing>
+          <ContainerImage>
+            <Image source={creditCardPayment} />
+          </ContainerImage>
+
+          <ContainerOutgoing>
+            <ContainerTitleOutgoing>
+              <TitleOutgoing>Pagamento</TitleOutgoing>
+              <TitleOutgoing received>+ R$ 2.000,00</TitleOutgoing>
+            </ContainerTitleOutgoing>
+
+            <ContainerSubTitleOutgoing>
+              <SubTitleOutgoing>
+                Pagamento de <ReceivedStrong>Vinícius</ReceivedStrong>
+              </SubTitleOutgoing>
+              <SubTitleOutgoing>13 Jul</SubTitleOutgoing>
+            </ContainerSubTitleOutgoing>
+          </ContainerOutgoing>
+        </UnicOutgoing>
+      </SafeAreaContainer>
     </Container>
   );
 }
 
 export default Main;
 
-const style = StyleSheet.create({
+const styles = StyleSheet.create({
   shadow: {
     shadowColor: '#fff',
     elevation: 2,
