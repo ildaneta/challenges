@@ -1,15 +1,14 @@
-import React from 'react';
+import 'react-native-gesture-handler';
 
-import Header from './components/Header/index';
-import Main from './components/Main/index';
-import Menu from './components/Menu/index';
+import React from 'react';
+import {NavigationContainer} from '@react-navigation/native';
+
+import Routes from './routes';
 
 export default function App() {
   return (
-    <>
-      <Header />
-      <Main />
-      <Menu />
-    </>
+    <NavigationContainer>
+      <Routes />
+    </NavigationContainer>
   );
 }
