@@ -35,7 +35,6 @@ export const AvailableBalance = styled.Text`
   color: #e6e2e6;
   margin-left: ${wp('5%')};
   margin-bottom: ${wp('5%')};
-  padding-top: ${wp('1')};
 `;
 
 export const ContainerPhotoNotification = styled.View`
@@ -55,36 +54,42 @@ export const Notification = styled.Image`
   margin-right: ${wp('3')};
 `;
 
+export const Teste = styled.View`
+  justify-content: center;
+  align-items: center;
+  margin-top: ${wp('3')};
+`;
+
 export const WrapperMenusIcons = styled.View`
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 `;
 
 export const ContainerMenusIcons = styled.View`
   margin-top: ${wp('1')};
   margin-bottom: ${wp('1')};
-  margin-left: ${wp('5')};
   margin-right: ${wp('5')};
+  align-items: center;
 `;
 
 export const MenusIcons = styled.TouchableOpacity.attrs({
   activeOpacity: 0.6,
 })`
-  background-color: ${(props) => (props.gray ? '#F5F7F9' : '#fff')};
-  padding-top: ${wp('1.2')};
-  padding-bottom: ${wp('1.2')};
-  padding-left: ${wp('1.2')};
-  padding-right: ${wp('1.2')};
+  background-color: ${(props) => (props.gray ? '#F5F7F9' : '#e6e2e6')};
+  padding-bottom: ${wp('1')};
+  padding-left: ${wp('2.4')};
   border-top-left-radius: ${wp('4')};
   border-top-right-radius: ${wp('4')};
   border-bottom-left-radius: ${wp('4')};
   border-bottom-right-radius: ${wp('4')};
+  width: ${wp('12%')};
+  height: ${hp('6.2%')};
 `;
 
 export const Icons = styled.Image`
-  width: ${wp('11%')};
-  height: ${hp('6.2%')};
+  width: ${wp('7%')};
+  height: ${hp('7%')};
 `;
 
 export const ContainerLabelIcon = styled.View`
