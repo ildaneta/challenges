@@ -1,5 +1,5 @@
-import React from 'react';
-import {View, Text} from 'react-native';
+import React, {useState} from 'react';
+import {useNavigation} from '@react-navigation/native';
 
 import menuHome from '../../assets/images/menu-home.png';
 import menuExtract from '../../assets/images/menu-extract.png';
@@ -15,33 +15,64 @@ import {
   TitleMenuIcon,
 } from './styles';
 
-function Menu() {
+function Menu(props) {
+  const navigation = useNavigation();
+
+  const menu = [
+    {
+      hasTitle: true,
+      name: 'Home',
+      icon: menuHome,
+      id: 1,
+    },
+    {
+      hasTitle: true,
+      name: 'Extrato',
+      icon: menuExtract,
+      id: 2,
+    },
+    {
+      hasTitle: false,
+      icon: menuPlus,
+      id: 3,
+    },
+    {
+      hasTitle: true,
+      name: 'Cards',
+      icon: menuCards,
+      id: 4,
+    },
+    {
+      hasTitle: true,
+      name: 'Perfil',
+      icon: menuProfile,
+      id: 5,
+    },
+  ];
+
+  const [active, setActive] = useState(
+    Array.from({length: menu.length}, () => false),
+  );
+
   return (
     <Container>
       <WrapperMenuIcon>
-        <MenuIcon>
-          <Icon source={menuHome} />
-          <TitleMenuIcon>Home</TitleMenuIcon>
-        </MenuIcon>
+        {menu.map((item, index) => (
+          <MenuIcon
+            onPress={() => {
+              navigation.navigate(item.name);
+            }}>
+            {item.hasTitle ? (
+              <>
+                <Icon source={item.icon} active={active} />
 
-        <MenuIcon>
-          <Icon source={menuExtract} />
-          <TitleMenuIcon>Extrato</TitleMenuIcon>
-        </MenuIcon>
-
-        <MenuIcon>
-          <Icon source={menuPlus} menuCenter />
-        </MenuIcon>
-
-        <MenuIcon>
-          <Icon source={menuCards} />
-          <TitleMenuIcon>Cartões</TitleMenuIcon>
-        </MenuIcon>
-
-        <MenuIcon>
-          <Icon source={menuProfile} />
-          <TitleMenuIcon>Perfil</TitleMenuIcon>
-        </MenuIcon>
+                <TitleMenuIcon active={active}>{item.name}</TitleMenuIcon>
+              </>
+            ) : (
+              <Icon source={item.icon} menuCenter active />
+            )}
+          </MenuIcon>
+        ))}
       </WrapperMenuIcon>
     </Container>
   );
