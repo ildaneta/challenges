@@ -35,7 +35,7 @@ function Main() {
       <ContainerTransactionsText>
         <TransactionsText extraBold>Transações Recentes</TransactionsText>
         <TouchableOpacity>
-          <TransactionsText>Veja tudo</TransactionsText>
+          <TransactionsText>Ver todas</TransactionsText>
         </TouchableOpacity>
       </ContainerTransactionsText>
 
@@ -45,12 +45,12 @@ function Main() {
             <Buttons>Todos</Buttons>
           </WrapperButton>
 
-          <WrapperButton style={styles.shadow}>
+          <WrapperButton>
             <ButtonsIcons source={income} />
             <Buttons>Entradas</Buttons>
           </WrapperButton>
 
-          <WrapperButton style={styles.shadow}>
+          <WrapperButton>
             <ButtonsIcons source={expense} />
             <Buttons>Saídas</Buttons>
           </WrapperButton>
@@ -68,12 +68,12 @@ function Main() {
           <ContainerOutgoing>
             <ContainerTitleOutgoing>
               <TitleOutgoing>Padaria</TitleOutgoing>
-              <TitleOutgoing>- R$ 50,58</TitleOutgoing>
+              <TitleOutgoing>- R$ 50,68</TitleOutgoing>
             </ContainerTitleOutgoing>
 
             <ContainerSubTitleOutgoing>
               <SubTitleOutgoing>Super pão</SubTitleOutgoing>
-              <SubTitleOutgoing>13 Jul</SubTitleOutgoing>
+              <SubTitleOutgoing>17 Jul</SubTitleOutgoing>
             </ContainerSubTitleOutgoing>
           </ContainerOutgoing>
         </WrapperOutgoing>
@@ -91,7 +91,7 @@ function Main() {
 
             <ContainerSubTitleOutgoing>
               <SubTitleOutgoing>UBER</SubTitleOutgoing>
-              <SubTitleOutgoing>02 Jul</SubTitleOutgoing>
+              <SubTitleOutgoing>17 Jul</SubTitleOutgoing>
             </ContainerSubTitleOutgoing>
           </ContainerOutgoing>
         </WrapperOutgoing>
@@ -115,7 +115,7 @@ function Main() {
               <SubTitleOutgoing>
                 Pagamento de <ReceivedStrong>Vinícius</ReceivedStrong>
               </SubTitleOutgoing>
-              <SubTitleOutgoing>13 Jul</SubTitleOutgoing>
+              <SubTitleOutgoing>16 Jul</SubTitleOutgoing>
             </ContainerSubTitleOutgoing>
           </ContainerOutgoing>
         </UnicOutgoing>
