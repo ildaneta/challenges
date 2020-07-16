@@ -12,8 +12,7 @@ export const Container = styled.ScrollView.attrs({
   background-color: #eceef2;
   border-top-right-radius: ${wp('6')};
   border-top-left-radius: ${wp('6')};
-  margin-top: ${wp('-7')};
-  /* margin-bottom: ${wp('20')}; */
+  margin-top: ${wp('-10')};
 `;
 
 export const ContainerTransactionsText = styled.View`
@@ -27,7 +26,7 @@ export const ContainerTransactionsText = styled.View`
 `;
 
 export const TransactionsText = styled.Text`
-  font-size: ${(props) => (props.extraBold ? `${wp('5')}` : `${wp('4.3')}`)};
+  font-size: ${(props) => (props.extraBold ? `${wp('5')}` : `${wp('4')}`)};
   color: ${(props) => (props.extraBold ? '#081a59' : '#254C92')};
   font-weight: bold;
 `;
@@ -37,27 +36,27 @@ export const ButtonsContainer = styled.View`
 `;
 
 export const WrapperButton = styled.TouchableOpacity.attrs({
-  activeOpacity: 0.6,
+  // activeOpacity: 0.6,
 })`
   background-color: #fff;
+  opacity: ${(props) => (props.first ? 1 : 0.6)};
   width: ${(props) => (props.noImage ? `${wp('17%')}` : `${wp('30%')}`)};
   margin-right: ${wp('2%')};
   align-items: center;
   justify-content: center;
   margin-left: ${(props) => (props.first ? `${wp('5%')}` : `${wp('0%')}`)};
-  /* padding: 6px 0px; */
   padding-top: ${wp('1%')};
   padding-bottom: ${wp('1%')};
   padding-left: ${wp('0%')};
   padding-right: ${wp('0%')};
   border-radius: ${wp('5%')};
-  height: ${hp('5.3')};
+  height: ${hp('5')};
   flex-direction: row;
   margin-bottom: ${wp('7%')};
 `;
 
 export const Buttons = styled.Text`
-  font-size: ${wp('4.1')};
+  font-size: ${wp('3.8')};
   font-weight: bold;
   color: #081a59;
 `;
@@ -78,7 +77,7 @@ export const SafeAreaContainer = styled.View`
 
 export const TitleDays = styled.Text`
   color: #b2bdcb;
-  font-size: ${wp('5%')};
+  font-size: ${wp('4%')};
   font-weight: bold;
 `;
 
@@ -144,7 +143,7 @@ export const ContainerSubTitleOutgoing = styled.View`
 `;
 
 export const TitleOutgoing = styled.Text`
-  font-size: ${wp('4.6')};
+  font-size: ${wp('4.5')};
   font-weight: bold;
   color: ${(props) => (props.received ? '#33B27C' : '#081a59')};
 `;
