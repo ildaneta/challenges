@@ -3,10 +3,10 @@ import {StatusBar} from 'react-native';
 
 import notification from '../../assets/images/notification.png';
 import ilda from '../../assets/images/ilda.jpeg';
+import investment from '../../assets/images/investment.png';
+import barcode from '../../assets/images/barcode.png';
+import transfer from '../../assets/images/transfer.png';
 import loan from '../../assets/images/loan.png';
-import walletRequest from '../../assets/images/wallet-request.png';
-import walletSend from '../../assets/images/wallet-send.png';
-import mobileTopUp from '../../assets/images/wallet-add.png';
 
 import {
   Container,
@@ -24,6 +24,8 @@ import {
   Icons,
   ContainerLabelIcon,
   LabelIcon,
+  Teste,
+  Img,
 } from './styles';
 
 function Header() {
@@ -34,7 +36,7 @@ function Header() {
         <ContainerProfileHome>
           <ContainerProfile>
             <ContainerSold>
-              <Sold>R$ 2.567.890,05</Sold>
+              <Sold>R$ 27.142,05</Sold>
             </ContainerSold>
 
             <ContainerPhotoNotification>
@@ -46,43 +48,45 @@ function Header() {
           <AvailableBalance>Saldo Disponível</AvailableBalance>
         </ContainerProfileHome>
 
-        <WrapperMenusIcons>
-          <ContainerMenusIcons>
-            <MenusIcons>
-              <Icons source={walletSend} />
-            </MenusIcons>
-            <ContainerLabelIcon>
-              <LabelIcon>Enviar</LabelIcon>
-            </ContainerLabelIcon>
-          </ContainerMenusIcons>
+        <Teste>
+          <WrapperMenusIcons>
+            <ContainerMenusIcons>
+              <MenusIcons>
+                <Icons source={transfer} />
+              </MenusIcons>
+              <ContainerLabelIcon>
+                <LabelIcon>Transferência</LabelIcon>
+              </ContainerLabelIcon>
+            </ContainerMenusIcons>
 
-          <ContainerMenusIcons>
-            <MenusIcons>
-              <Icons source={walletRequest} />
-            </MenusIcons>
-            <ContainerLabelIcon>
-              <LabelIcon>Receber</LabelIcon>
-            </ContainerLabelIcon>
-          </ContainerMenusIcons>
+            <ContainerMenusIcons>
+              <MenusIcons>
+                <Icons source={barcode} />
+              </MenusIcons>
+              <ContainerLabelIcon>
+                <LabelIcon>Boleto</LabelIcon>
+              </ContainerLabelIcon>
+            </ContainerMenusIcons>
 
-          <ContainerMenusIcons>
-            <MenusIcons>
-              <Icons source={loan} />
-            </MenusIcons>
-            <ContainerLabelIcon>
-              <LabelIcon>Crédito</LabelIcon>
-            </ContainerLabelIcon>
-          </ContainerMenusIcons>
+            <ContainerMenusIcons>
+              <MenusIcons>
+                <Icons source={investment} />
+              </MenusIcons>
+              <ContainerLabelIcon>
+                <LabelIcon>Investimentos</LabelIcon>
+              </ContainerLabelIcon>
+            </ContainerMenusIcons>
 
-          <ContainerMenusIcons>
-            <MenusIcons>
-              <Icons source={mobileTopUp} />
-            </MenusIcons>
-            <ContainerLabelIcon>
-              <LabelIcon>Recarga</LabelIcon>
-            </ContainerLabelIcon>
-          </ContainerMenusIcons>
-        </WrapperMenusIcons>
+            <ContainerMenusIcons>
+              <MenusIcons>
+                <Icons source={loan} />
+              </MenusIcons>
+              <ContainerLabelIcon>
+                <LabelIcon>Crédito</LabelIcon>
+              </ContainerLabelIcon>
+            </ContainerMenusIcons>
+          </WrapperMenusIcons>
+        </Teste>
       </Container>
     </>
   );
