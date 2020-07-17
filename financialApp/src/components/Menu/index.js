@@ -22,12 +22,14 @@ function Menu(props) {
     {
       hasTitle: true,
       name: 'Home',
+      title: 'Home',
       icon: menuHome,
       id: 1,
     },
     {
       hasTitle: true,
       name: 'Extrato',
+      title: 'Extrato',
       icon: menuExtract,
       id: 2,
     },
@@ -39,12 +41,14 @@ function Menu(props) {
     {
       hasTitle: true,
       name: 'Cards',
+      title: 'Cartões',
       icon: menuCards,
       id: 4,
     },
     {
       hasTitle: true,
       name: 'Perfil',
+      title: 'Perfil',
       icon: menuProfile,
       id: 5,
     },
@@ -66,7 +70,7 @@ function Menu(props) {
               <>
                 <Icon source={item.icon} active={active} />
 
-                <TitleMenuIcon active={active}>{item.name}</TitleMenuIcon>
+                <TitleMenuIcon active={active}>{item.title}</TitleMenuIcon>
               </>
             ) : (
               <Icon source={item.icon} menuCenter active />
