@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {StatusBar, Text, Switch} from 'react-native';
+import {StatusBar, Text, Switch, StyleSheet} from 'react-native';
 
 import Menu from '../components/Menu';
 
@@ -47,7 +47,11 @@ import {
 
 export default function Cards() {
   const [isEnabled, setIsEnabled] = useState(false);
+  const [isEnabled2, setIsEnabled2] = useState(false);
+  const [isEnabled3, setIsEnabled3] = useState(false);
   const toggleSwitch = () => setIsEnabled((previousState) => !previousState);
+  const toggleSwitch2 = () => setIsEnabled2((previousState) => !previousState);
+  const toggleSwitch3 = () => setIsEnabled3((previousState) => !previousState);
 
   return (
     <>
@@ -65,7 +69,7 @@ export default function Cards() {
         </WrapperTextMainButton>
 
         <ButtonsContainer>
-          <WrapperButton first>
+          <WrapperButton first active style={styles.shadow}>
             <Buttons>Cartão Físico</Buttons>
           </WrapperButton>
 
@@ -158,10 +162,10 @@ export default function Cards() {
             <SwitchButton>
               <Switch
                 trackColor={{false: '#E7EBF1', true: '#34B27C'}}
-                thumbColor={isEnabled ? '#fff' : '#E7EBF1'}
+                thumbColor={isEnabled2 ? '#fff' : '#E7EBF1'}
                 ios_backgroundColor="#E7EBF1"
-                onValueChange={toggleSwitch}
-                value={isEnabled}
+                onValueChange={toggleSwitch2}
+                value={isEnabled2}
               />
             </SwitchButton>
           </WrapperSwitchButtons>
@@ -177,10 +181,10 @@ export default function Cards() {
             <SwitchButton>
               <Switch
                 trackColor={{false: '#E7EBF1', true: '#34B27C'}}
-                thumbColor={isEnabled ? '#fff' : '#E7EBF1'}
+                thumbColor={isEnabled3 ? '#fff' : '#E7EBF1'}
                 ios_backgroundColor="#E7EBF1"
-                onValueChange={toggleSwitch}
-                value={isEnabled}
+                onValueChange={toggleSwitch3}
+                value={isEnabled3}
               />
             </SwitchButton>
           </WrapperSwitchButtons>
@@ -190,3 +194,10 @@ export default function Cards() {
     </>
   );
 }
+
+const styles = StyleSheet.create({
+  shadow: {
+    shadowColor: '#fff',
+    elevation: 2,
+  },
+});
