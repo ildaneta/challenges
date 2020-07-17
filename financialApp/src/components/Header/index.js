@@ -24,8 +24,10 @@ import {
   Icons,
   ContainerLabelIcon,
   LabelIcon,
-  Teste,
+  Wrapper,
   Img,
+  WrapperPhoto,
+  WrapperNotification,
 } from './styles';
 
 function Header() {
@@ -36,19 +38,22 @@ function Header() {
         <ContainerProfileHome>
           <ContainerProfile>
             <ContainerSold>
-              <Sold>R$ 27.142,05</Sold>
+              <Sold>R$ 74.935,12</Sold>
             </ContainerSold>
 
             <ContainerPhotoNotification>
               <Notification source={notification} />
-              <Photo source={ilda} />
+              <WrapperNotification />
+              <WrapperPhoto>
+                <Photo source={ilda} />
+              </WrapperPhoto>
             </ContainerPhotoNotification>
           </ContainerProfile>
 
           <AvailableBalance>Saldo Disponível</AvailableBalance>
         </ContainerProfileHome>
 
-        <Teste>
+        <Wrapper>
           <WrapperMenusIcons>
             <ContainerMenusIcons>
               <MenusIcons>
@@ -86,7 +91,7 @@ function Header() {
               </ContainerLabelIcon>
             </ContainerMenusIcons>
           </WrapperMenusIcons>
-        </Teste>
+        </Wrapper>
       </Container>
     </>
   );

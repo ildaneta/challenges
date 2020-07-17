@@ -6,7 +6,7 @@ import {
 
 export const Container = styled.SafeAreaView`
   background-color: #2750a0;
-  height: ${hp('34%')};
+  height: ${hp('35%')};
 `;
 
 export const ContainerProfileHome = styled.View``;
@@ -24,13 +24,15 @@ export const ContainerSold = styled.View``;
 
 export const Sold = styled.Text`
   font-size: ${wp('7%')};
+  font-family: 'NunitoSans-Bold';
   letter-spacing: ${wp('-0.2%')};
   font-weight: bold;
   color: #fff;
 `;
 
 export const AvailableBalance = styled.Text`
-  font-size: ${wp('4%')};
+  font-size: ${wp('4.4%')};
+  font-family: 'NunitoSans-Regular';
   letter-spacing: ${wp('0.02%')};
   color: #e6e2e6;
   margin-left: ${wp('5%')};
@@ -42,19 +44,39 @@ export const ContainerPhotoNotification = styled.View`
   align-items: center;
 `;
 
+export const WrapperPhoto = styled.View`
+  height: ${hp('6.8%')};
+  width: ${wp('12.8%')};
+  border: 1.4px solid #fff;
+  align-items: center;
+  justify-content: center;
+  border-radius: ${wp('4')};
+`;
+
 export const Photo = styled.Image`
-  height: ${hp('7')};
+  height: ${hp('6.5')};
   width: ${wp('12')};
-  border-radius: ${wp('3')};
+  border-radius: ${wp('4')};
+`;
+
+export const WrapperNotification = styled.View`
+  height: ${hp('1.5%')};
+  width: ${wp('2.9%')};
+  border-radius: ${wp('70')};
+  background-color: #f9917d;
+  margin-top: ${wp('-2.9%')};
+  margin-left: ${wp('-3%')};
+  margin-right: ${wp('2')};
+  border: 2.7px solid #2750a0;
 `;
 
 export const Notification = styled.Image`
   height: ${hp('4%')};
-  width: ${wp('6')};
-  margin-right: ${wp('3')};
+  width: ${wp('7%')};
+  transform: rotate(10deg);
 `;
 
-export const Teste = styled.View`
+export const Wrapper = styled.View`
   justify-content: center;
   align-items: center;
   margin-top: ${wp('3')};
