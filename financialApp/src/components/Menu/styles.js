@@ -32,7 +32,7 @@ export const Icon = styled.Image`
 `;
 
 export const TitleMenuIcon = styled.Text`
-  font-size: ${wp('3%')};
+  font-size: ${wp('3.7%')};
   color: #081a59;
-  font-weight: bold;
+  font-family: 'NunitoSans-Bold';
 `;

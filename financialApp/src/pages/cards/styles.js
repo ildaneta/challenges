@@ -37,11 +37,11 @@ export const TitleMain = styled.Text`
   justify-content: center;
   align-items: center;
   font-size: ${wp('8%')};
-  font-weight: bold;
-  color: #081a59;
+  font-family: 'NunitoSans-Black';
+  color: #153b64;
 `;
 
-export const ButtonMain = styled.View`
+export const ButtonMain = styled.TouchableOpacity`
   margin-top: ${wp('1')};
   margin-right: ${wp('-4')};
 `;
@@ -52,7 +52,8 @@ export const ButtonImage = styled.Image`
 `;
 
 export const SubTitleMain = styled.Text`
-  font-size: ${wp('4.2%')};
+  font-size: ${wp('4.3%')};
+  font-family: 'NunitoSans-Regular';
   color: #54769c;
 `;
 
@@ -61,10 +62,9 @@ export const ButtonsContainer = styled.View`
   align-items: center;
 `;
 
-export const WrapperButton = styled.TouchableOpacity.attrs({
-  activeOpacity: 0.6,
-})`
+export const WrapperButton = styled.TouchableOpacity`
   background-color: #fff;
+  opacity: ${(props) => (props.active ? 1 : 0.6)};
   width: ${wp('34%')};
   height: ${hp('5')};
   align-items: center;
@@ -77,8 +77,8 @@ export const WrapperButton = styled.TouchableOpacity.attrs({
 `;
 
 export const Buttons = styled.Text`
-  font-size: ${wp('4.1%')};
-  font-weight: bold;
+  font-size: ${wp('4.2%')};
+  font-family: 'NunitoSans-Bold';
   color: #081a59;
 `;
 
@@ -128,7 +128,7 @@ export const ContainerAsteriskCard = styled.View`
 export const ContainerAsteriskCardText = styled.Text`
   letter-spacing: ${(props) => (props.number ? `${wp('0')}` : `${wp('0.4')}`)};
   font-size: ${(props) => (props.number ? `${wp('5%')};` : `${wp('4.7%')};`)};
-  font-weight: bold;
+  font-family: 'NunitoSans-Bold';
   color: #eceef2;
 `;
 
@@ -145,15 +145,15 @@ export const ContainerDescriptionsCardWrapper = styled.View`
 
 export const TitleDescriptionsCard = styled.Text`
   color: #5a769c;
-  font-weight: bold;
+  font-family: 'NunitoSans-Bold';
   font-size: ${wp('3')};
   margin-bottom: ${wp('1.8%')};
 `;
 
 export const DataDescriptionsCard = styled.Text`
   color: #eceef2;
-  font-weight: bold;
-  font-size: ${wp('3.6')};
+  font-family: 'NunitoSans-Bold';
+  font-size: ${wp('4')};
 `;
 
 export const ContainerSwitchButtons = styled.View`
@@ -174,17 +174,18 @@ export const WrapperSwitchButtons = styled.View`
 `;
 
 export const TextButtons = styled.Text`
-  font-size: ${wp('4.3%')};
+  font-size: ${wp('4.4%')};
+  font-family: 'NunitoSans-Regular';
   color: #081a59;
 `;
 
 export const TitleSettingsCards = styled.Text`
-  font-size: ${wp('5.6%')};
+  font-size: ${wp('5.8%')};
   margin-left: ${wp('5%')};
   margin-top: ${wp('10%')};
   margin-bottom: ${wp('-4%')};
-  font-weight: bold;
-  color: #081a59;
+  font-family: 'NunitoSans-Black';
+  color: #153b64;
 `;
 
 export const IconsButtons = styled.Image`
@@ -198,7 +199,3 @@ export const ViewTest = styled.View`
   flex-direction: row;
   align-items: center;
 `;
-
-// b9c4cd
-// a9a9d4
-// 5a769c

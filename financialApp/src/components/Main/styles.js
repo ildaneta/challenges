@@ -26,18 +26,16 @@ export const ContainerTransactionsText = styled.View`
 `;
 
 export const TransactionsText = styled.Text`
-  font-size: ${(props) => (props.extraBold ? `${wp('5')}` : `${wp('4')}`)};
+  font-size: ${(props) => (props.extraBold ? `${wp('5.3')}` : `${wp('3.9')}`)};
   color: ${(props) => (props.extraBold ? '#081a59' : '#254C92')};
-  font-weight: bold;
+  font-family: 'NunitoSans-Bold';
 `;
 
 export const ButtonsContainer = styled.View`
   flex-direction: row;
 `;
 
-export const WrapperButton = styled.TouchableOpacity.attrs({
-  // activeOpacity: 0.6,
-})`
+export const WrapperButton = styled.TouchableOpacity`
   background-color: #fff;
   opacity: ${(props) => (props.first ? 1 : 0.6)};
   width: ${(props) => (props.noImage ? `${wp('17%')}` : `${wp('30%')}`)};
@@ -56,8 +54,8 @@ export const WrapperButton = styled.TouchableOpacity.attrs({
 `;
 
 export const Buttons = styled.Text`
-  font-size: ${wp('3.8')};
-  font-weight: bold;
+  font-size: ${wp('3.9')};
+  font-family: 'NunitoSans-Bold';
   color: #081a59;
 `;
 
@@ -78,7 +76,7 @@ export const SafeAreaContainer = styled.View`
 export const TitleDays = styled.Text`
   color: #b2bdcb;
   font-size: ${wp('4%')};
-  font-weight: bold;
+  font-family: 'NunitoSans-Bold';
 `;
 
 export const WrapperOutgoing = styled.View`
@@ -144,16 +142,17 @@ export const ContainerSubTitleOutgoing = styled.View`
 
 export const TitleOutgoing = styled.Text`
   font-size: ${wp('4.5')};
-  font-weight: bold;
+  font-family: 'NunitoSans-Bold';
   color: ${(props) => (props.received ? '#33B27C' : '#081a59')};
 `;
 
 export const SubTitleOutgoing = styled.Text`
-  font-size: ${wp('3.9')};
+  font-size: ${wp('4.2')};
+  font-family: 'NunitoSans-Regular';
   color: #8090a2;
 `;
 
 export const ReceivedStrong = styled.Text`
-  font-weight: bold;
   font-size: ${wp('4.2')};
+  font-family: 'NunitoSans-Bold';
 `;
