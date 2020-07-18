@@ -62,3 +62,4 @@ This was a challenge that required a lot of knowledge of CSS Flexbox, as I used 
 - <a href="https://www.linkedin.com/in/ilda-silva-neta/" target="_blank">LinkedIn</a>
 
 Made with love :heart_decoration: by **Ilda Neta.**
+MIT License
