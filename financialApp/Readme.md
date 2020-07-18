@@ -1,6 +1,6 @@
 ![image](https://user-images.githubusercontent.com/21963291/85336662-5d8fb200-b4b5-11ea-999f-41da44f32b82.png)
 
-# Frontend Challenge - ReactJS Concepts
+# Financial Application - React Native
 
 ## ![image](https://user-images.githubusercontent.com/21963291/85338764-45ba2d00-b4b9-11ea-921a-d15eb692b2ea.png) Menu Contents
 
