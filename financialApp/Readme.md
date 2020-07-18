@@ -19,17 +19,18 @@ This was a challenge that required a lot of knowledge of CSS Flexbox, as I used 
 
 ## :woman_technologist: Technologies
 
-- React Navigation
 - React Native
+- React Navigation
 - Styled components
+- Font family: Nunito Sans (Google Fonts)
 - React Native Responsive Screen
 
 ## :computer: Final Application
 
 ![Home 1](https://user-images.githubusercontent.com/21963291/87832331-27e3ac00-c85c-11ea-8e1a-978d593a0674.PNG)
-![Cards 2](https://user-images.githubusercontent.com/21963291/87832338-29ad6f80-c85c-11ea-8cc6-02a0c1d447e8.PNG)
-![Home 2](https://user-images.githubusercontent.com/21963291/87832335-2914d900-c85c-11ea-917b-39a0fc583f9b.PNG)
 ![Cards 1](https://user-images.githubusercontent.com/21963291/87832336-29ad6f80-c85c-11ea-9e70-eb153cf3b8bf.PNG)
+![Home 2](https://user-images.githubusercontent.com/21963291/87832335-2914d900-c85c-11ea-917b-39a0fc583f9b.PNG)
+![Cards 2](https://user-images.githubusercontent.com/21963291/87832338-29ad6f80-c85c-11ea-8cc6-02a0c1d447e8.PNG)
 
 ## :heavy_check_mark: Installation
 
