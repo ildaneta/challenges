@@ -19,10 +19,9 @@ This was a challenge that required a lot of knowledge of CSS Flexbox, as I used 
 
 ## :woman_technologist: Technologies
 
-- React Native
 - React Navigation
+- React Native
 - Styled components
-- Font family: Nunito Sans (Google Fonts)
 - React Native Responsive Screen
 
 ## :computer: Final Application
