@@ -34,8 +34,6 @@ export const DivTitleMain = styled.View`
 `;
 
 export const TitleMain = styled.Text`
-  justify-content: center;
-  align-items: center;
   font-size: ${wp('8%')};
   font-family: 'NunitoSans-Black';
   color: #153b64;
