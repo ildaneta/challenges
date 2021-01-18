@@ -1,0 +1,8 @@
+{
+  "name": "challenges",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:ildaneta/challenges.git",
+  "author": "ildaneta <iildaemanoely@gmail.com>",
+  "license": "MIT"
+}
