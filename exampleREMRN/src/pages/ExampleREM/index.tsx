@@ -13,7 +13,7 @@ const ExampleREM: React.FC = () => {
   return (
     <SafeAreaView style={styles.safeAreaContainer}>
       <View style={styles.container}>
-        <Text style={styles.text}>A proporção atual de pixel é:</Text>
+        <Text style={styles.text}>A densidade de pixel é:</Text>
         <Text style={styles.value}>{PixelRatio.get()} </Text>
       </View>
 
@@ -26,7 +26,7 @@ const ExampleREM: React.FC = () => {
 
       <View style={styles.container}>
         <Text style={styles.text}>
-          Exige uma imagem de de width em pixels de:
+          Exige uma imagem de width em pixels de:
         </Text>
         <Text style={styles.value}>
           {PixelRatio.getPixelSizeForLayoutSize(size)} px

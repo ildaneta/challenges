@@ -19,7 +19,7 @@ export const ContainerTransactionsText = styled.View`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin-top: ${wp('5')};
+  margin-top: 20px;
   margin-right: ${wp('5')};
   margin-left: ${wp('5')};
   margin-bottom: ${wp('5')};

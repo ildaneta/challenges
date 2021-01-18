@@ -1,5 +1,5 @@
 import React from 'react';
-import {StatusBar} from 'react-native';
+import { StatusBar } from 'react-native';
 
 import notification from '../../assets/images/notification.png';
 import ilda from '../../assets/images/ilda.jpeg';
