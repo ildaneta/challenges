@@ -1,0 +1,6 @@
+module Pods_coronaVirusAPP_coronaVirusAPPTests {
+  umbrella header "Pods-coronaVirusAPP-coronaVirusAPPTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
