@@ -1,4 +1,0 @@
-#Mon Oct 26 05:05:37 BRT 2020
-base.0=/Users/ildaneta/Github/challenges/corona-virus-app/android/app/build/intermediates/dex/debug/mergeDexDebug/out/classes.dex
-path.0=classes.dex
-renamed.0=classes.dex
