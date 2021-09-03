@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "babel-eslint": "^10.0.3",
-    "immer": "^8.0.1",
+    "immer": "^9.0.6",
     "react": "^16.9.0",
     "react-dnd": "^10.0.2",
     "react-dnd-html5-backend": "^10.0.2",
